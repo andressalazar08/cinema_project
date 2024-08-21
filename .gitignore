@@ -1,0 +1,5 @@
+backend/node_modules
+.env
+# Local Netlify folder
+.netlify
+url_deploy_backend
