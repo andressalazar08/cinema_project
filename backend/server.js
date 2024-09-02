@@ -5,7 +5,7 @@ const serverless = require('serverless-http');
 
 //Database import
 const { Sequelize }= require('sequelize');
-const sequelize = require('../config/database');
+const sequelize = require('./config/database');
 
 const app = express();
 
@@ -21,7 +21,7 @@ router.get('/', (req,res)=>{
     })
 });
 
-app.use('/.netlify/functions/server', router);
+app.use('/', router);
 
 
 //Database authenticate
